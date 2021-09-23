@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 1,
+    "failures": -1,
+    "start": "2021-09-23T12:52:01.809Z",
+    "end": "2021-09-23T12:52:35.491Z",
+    "duration": 33682,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 25,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "5d6b5ff4-b133-418e-8dbc-ecb83c281c41",
+      "title": "",
+      "fullFile": "cypress/integration/test.spec.js",
+      "file": "cypress/integration/test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6ec12e18-88cf-4a8e-aa78-c1a1a4f046f7",
+          "title": "HRM Scenario Verification ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Login ",
+              "fullTitle": "HRM Scenario Verification  Verify Login ",
+              "timedOut": null,
+              "duration": 10669,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com\");\nlogin.enterLoginDetails('Admin', 'admin123');",
+              "err": {},
+              "uuid": "82eb44df-03bf-4ed0-9d46-fc00f16fc527",
+              "parentUUID": "6ec12e18-88cf-4a8e-aa78-c1a1a4f046f7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Home page ",
+              "fullTitle": "HRM Scenario Verification  Verify Home page ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "8e8a35cf-0208-4a77-8470-c199db93b86a",
+              "parentUUID": "6ec12e18-88cf-4a8e-aa78-c1a1a4f046f7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify leave page ",
+              "fullTitle": "HRM Scenario Verification  Verify leave page ",
+              "timedOut": null,
+              "duration": 9681,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "leave.clickonLeave();\nlogin.enterLoginDetails('Admin', 'admin123');\nleave.assignLeave();",
+              "err": {},
+              "uuid": "f01ad04b-a0ac-4406-90ea-bb4c97964f5c",
+              "parentUUID": "6ec12e18-88cf-4a8e-aa78-c1a1a4f046f7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify admin page ",
+              "fullTitle": "HRM Scenario Verification  Verify admin page ",
+              "timedOut": null,
+              "duration": 10126,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "admin.clickonAdmin();\nlogin.enterLoginDetails('Admin', 'admin123');\nadmin.searchAdminUserandVerify();",
+              "err": {},
+              "uuid": "7fea3b60-ec1c-41e0-b396-e720a73d4af1",
+              "parentUUID": "6ec12e18-88cf-4a8e-aa78-c1a1a4f046f7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "82eb44df-03bf-4ed0-9d46-fc00f16fc527",
+            "f01ad04b-a0ac-4406-90ea-bb4c97964f5c",
+            "7fea3b60-ec1c-41e0-b396-e720a73d4af1"
+          ],
+          "failures": [],
+          "pending": [
+            "8e8a35cf-0208-4a77-8470-c199db93b86a"
+          ],
+          "skipped": [],
+          "duration": 30476,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/mocha",
+        "code": false,
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
